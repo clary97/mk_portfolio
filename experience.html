@@ -25,7 +25,7 @@
   <div class="side-stats">
     <div><div class="side-stat-num">7</div><div class="side-stat-label">PUBLICATIONS</div></div>
     <div><div class="side-stat-num">4.18</div><div class="side-stat-label">GPA / 4.5</div></div>
-    <div><div class="side-stat-num">2+</div><div class="side-stat-label">PROJECTS</div></div>
+    <div><div class="side-stat-num">4</div><div class="side-stat-label">PROJECTS</div></div>
   </div>
 </aside>
 <main>
@@ -52,14 +52,33 @@
           <div class="project-card-header">
             <h3 class="project-name">드론 상용화 프로젝트</h3>
             <div class="project-tags">
-              <span class="tag tag-sm">Python</span><span class="tag tag-sm">PyTorch</span><span class="tag tag-sm">VLM</span><span class="tag tag-sm">SAM</span><span class="tag tag-sm">FastAPI</span><span class="tag tag-sm">Docker</span>
+              <span class="tag tag-sm">Python</span><span class="tag tag-sm">PyTorch</span><span class="tag tag-sm">VLM</span><span class="tag tag-sm">SAM</span><span class="tag tag-sm">Multi-Agent</span><span class="tag tag-sm">FastAPI</span><span class="tag tag-sm">Docker</span><span class="tag tag-sm">GCP</span><span class="tag tag-sm">Git</span>
             </div>
           </div>
           <ul class="bullet-list">
-            <li><span class="bullet-title">AI 모델 개발 및 서빙</span>교량 결함 카테고리별 Segmentation 모델 구성 및 Foundation Model 기반 LoRA Fine-tuning 수행. TPR 90% 이상을 목표로 모델 성능 개선 및 FastAPI 기반 추론 서비스 연동.</li>
+            <li><span class="bullet-title">AI 모델 학습·평가 및 서빙</span>교량 결함 카테고리별로 파운데이션 모델 후보를 동일한 데이터로 학습해 성능을 비교하고, 우수한 모델을 선정해 파인튜닝 진행. 학습에 사용하지 않은 평가 데이터 기준 픽셀 단위 TPR 전 카테고리 90% 이상 달성 및 TTA 공인 시험 인증서 발급. FastAPI 기반 추론 서비스와 연계.</li>
             <li><span class="bullet-title">데이터 파이프라인 엔지니어링</span>기보유·신규 드론 촬영 데이터를 활용한 학습 데이터 구성 및 결함 라벨링 수행. 라벨링 가이드와 데이터 검증 기준을 수립하고 수집·전처리·적재 파이프라인 구축.</li>
-            <li><span class="bullet-title">E2E 점검 서비스 개발</span>AI 분석 결과를 실제 점검 업무에 활용하기 위한 Frontend·Backend 구조 및 데이터 흐름 설계·구현. 모델 추론, 웹 대시보드, 보고서 생성 및 3D Viewer를 연계한 통합 점검 서비스 개발.</li>
+            <li><span class="bullet-title">E2E 점검 서비스 개발</span>AI 분석 결과를 실제 점검 업무에 활용하기 위한 Frontend·Backend 구조 및 데이터 흐름 설계·구현. 모델 추론, 웹 대시보드, 보고서 생성 및 3D Viewer를 연계한 통합 점검 서비스 개발. 기획·프론트엔드·백엔드·코드 리뷰 역할의 멀티 에이전트를 구성해 대시보드 설계·구현에 활용.</li>
             <li><span class="bullet-title">Technical PL 및 상용화</span>기관·점검업체의 실제 사용을 목표로 요구사항 정의, 기술 일정 조율, PoC 검증 및 시스템 연동 수행. 컨소시엄 기술 소통 창구로서 모델·서비스 개발부터 기술 산출물 검수까지 프로젝트 전 과정 담당.</li>
+          </ul>
+          <div class="metrics-row">
+            <div class="metric"><span class="metric-val">90%+</span><span class="metric-label">픽셀 단위 TPR · 전 카테고리</span></div>
+            <div class="metric"><span class="metric-val">TTA</span><span class="metric-label">공인 시험 인증서 발급</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3 class="project-name">영상 개인정보 비식별화 모델 개발</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">Python</span><span class="tag tag-sm">PyTorch</span><span class="tag tag-sm">YOLO</span><span class="tag tag-sm">ReID</span><span class="tag tag-sm">Multi-Agent</span>
+            </div>
+          </div>
+          <ul class="bullet-list">
+            <li><span class="bullet-title">개인정보 비식별화 모델 개발</span>YOLO 기반으로 영상 내 사람 얼굴 및 차량 번호판을 탐지하고 개인정보 노출을 방지하기 위한 비식별화 모델 설계·개발.</li>
+            <li><span class="bullet-title">비식별화 성능 고도화</span>탐지 누락 및 오탐 사례를 분석하고, 개인정보 보호 범위를 최대한 확보하기 위한 탐지 결과 보완 및 오탐 감소 방안 설계·적용.</li>
+            <li><span class="bullet-title">동일 인물 식별 기술 적용</span>얼굴 및 신체 특징을 결합한 ReID 모델을 활용하여 영상 내 동일 인물을 일관되게 구분하는 기능 개발.</li>
+            <li><span class="bullet-title">선택적 비식별화 기능 개발</span>동일 인물 식별 결과를 기반으로 특정 인물의 모자이크를 해제하거나, 특정 인물을 제외한 나머지 인물의 모자이크를 해제하는 기능 개발.</li>
+            <li><span class="bullet-title">제품 상용화 준비</span>실제 서비스 환경에서의 개인정보 보호 성능과 선택적 비식별화 기능 적용을 위한 모델 고도화 및 제품 연계 검토.</li>
           </ul>
         </div>
       </div>
@@ -85,17 +104,18 @@
               <span class="project-period mono">2024.03 — 2024.11</span>
             </div>
             <div class="project-tags">
-              <span class="tag tag-sm">Python</span><span class="tag tag-sm">PyTorch</span><span class="tag tag-sm">OpenCV</span><span class="tag tag-sm">Docker</span><span class="tag tag-sm">Gradio</span>
+              <span class="tag tag-sm">Python</span><span class="tag tag-sm">PyTorch</span><span class="tag tag-sm">OpenCV</span><span class="tag tag-sm">Docker</span><span class="tag tag-sm">LabelMe</span><span class="tag tag-sm">Gradio</span><span class="tag tag-sm">Git</span>
             </div>
           </div>
           <ul class="bullet-list">
-            <li><span class="bullet-title">Docker 기반 배포 환경 표준화</span>연구 단계 모델의 현장 이식성 확보. 라이브러리 의존성 문제 해결 및 환경 불일치 오류 100% 제거.</li>
-            <li><span class="bullet-title">실시간 추론 시각화 데모 개발</span>현업 관계자용 GUI 기반 데모 전담 개발. 산학 프로젝트 최종 시연 성공적으로 완료.</li>
-            <li><span class="bullet-title">데이터셋 구축</span>LabelMe 기반 레이블링 가이드 구체화 및 준지도 학습 병행으로 총 6만 장 규모 데이터셋 구축. 직접 1만 장 레이블링 수행.</li>
+            <li><span class="bullet-title">세그멘테이션 모델 학습·검증</span>NAS 기반 세그멘테이션 모델을 학습하고 성능 검증. 기존 룰 베이스에서 오탐이 많던 어두운 구간에서도 평균 mIoU 95.9% 확보.</li>
+            <li><span class="bullet-title">데이터 무결성 검증 프로세스 정립</span>LabelMe 기반 레이블링 가이드 구체화 및 준지도 학습 방식 병행으로 총 6만 장 규모 데이터셋 구축에 기여. 그 중 1만 장 직접 레이블링 수행.</li>
+            <li><span class="bullet-title">실시간 추론 시각화 데모 개발</span>현업 관계자가 탐지 결과를 직관적으로 확인할 수 있는 GUI 기반 데모 전담 개발. 산학 프로젝트 최종 시연 성공적으로 완료.</li>
+            <li><span class="bullet-title">Docker 기반 배포 환경 표준화</span>연구 단계 모델의 현장 이식성 확보를 위해 컨테이너 환경을 독자 설계. 라이브러리 의존성 문제 해결 및 팀 협업 효율 개선.</li>
           </ul>
           <div class="metrics-row">
-            <div class="metric"><span class="metric-val">96.9%</span><span class="metric-label">mIoU</span></div>
-            <div class="metric"><span class="metric-val">&lt;16s</span><span class="metric-label">추론 시간</span></div>
+            <div class="metric"><span class="metric-val">96.9%</span><span class="metric-label">평균 mIoU · 룰 베이스 78.0%</span></div>
+            <div class="metric"><span class="metric-val">15.36s</span><span class="metric-label">평균 추론 · 목표 16s</span></div>
             <div class="metric"><span class="metric-val">100%</span><span class="metric-label">환경오류 제거</span></div>
           </div>
         </div>
@@ -103,20 +123,22 @@
           <div class="project-card-header">
             <div>
               <h3 class="project-name">최적 하이퍼파라미터 자동 탐색 MLOps 파이프라인</h3>
-              <span class="project-period mono">2025.03 — 2025.08</span>
+              <span class="project-period mono">2023.09 — 2025.08</span>
             </div>
             <div class="project-tags">
-              <span class="tag tag-sm">Python</span><span class="tag tag-sm">Ray Tune</span><span class="tag tag-sm">FastAPI</span><span class="tag tag-sm">MinIO</span><span class="tag tag-sm">Docker</span>
+              <span class="tag tag-sm">Python</span><span class="tag tag-sm">Ray Tune</span><span class="tag tag-sm">FastAPI</span><span class="tag tag-sm">MinIO</span><span class="tag tag-sm">Docker</span><span class="tag tag-sm">Gradio</span>
             </div>
           </div>
           <ul class="bullet-list">
-            <li><span class="bullet-title">End-to-end 데이터 처리 파이프라인</span>비정형 원본 데이터를 AI 실험에 즉시 활용 가능하도록 자동화된 전처리 파이프라인 구축.</li>
-            <li><span class="bullet-title">FastAPI 기반 동적 데이터 인터페이스</span>사용자 입력에 따라 데이터 구조를 모델에 맞게 동적으로 재구성·연동하는 API 설계 및 구현.</li>
-            <li><span class="bullet-title">MinIO 기반 실험 관리 시스템</span>대용량 학습 데이터, 가중치, 실험 아티팩트를 오브젝트 스토리지로 체계화하여 실험 재현성 확보.</li>
+            <li><span class="bullet-title">데이터 전처리 자동화</span>공공 4종과 제조 5종 데이터를 모델 입력에 맞는 공통 구조로 변환하고, 신규 데이터에도 적용 가능한 전처리 파이프라인 구축. 데이터셋별 개별 전처리 대비 데이터 준비 시간 약 80% 단축.</li>
+            <li><span class="bullet-title">하이퍼파라미터 탐색 자동화</span>NSGA-II 다목적 최적화와 ASHA 조기 종료를 결합해 반복 튜닝을 자동화하고, 9종 데이터셋 기준 하이퍼파라미터 탐색 시간 약 83% 단축.</li>
+            <li><span class="bullet-title">FastAPI 기반 데이터 인터페이스 개발</span>사용자 입력에 따라 데이터 구조를 모델에 맞게 동적으로 재구성·연동하는 API 설계 및 구현.</li>
+            <li><span class="bullet-title">MinIO 기반 실험 관리 시스템 구축</span>대용량 학습 데이터, 가중치, 실험 아티팩트를 오브젝트 스토리지로 체계화하여 실험 재현성 확보.</li>
           </ul>
           <div class="metrics-row">
-            <div class="metric"><span class="metric-val">83%</span><span class="metric-label">자원 사용량 절감</span></div>
-            <div class="metric"><span class="metric-val">9종</span><span class="metric-label">데이터셋 탐색 기준</span></div>
+            <div class="metric"><span class="metric-val">83%</span><span class="metric-label">탐색 시간 단축</span></div>
+            <div class="metric"><span class="metric-val">80%</span><span class="metric-label">데이터 준비 시간 단축</span></div>
+            <div class="metric"><span class="metric-val">9종</span><span class="metric-label">공공 4 + 제조 5 데이터셋</span></div>
           </div>
         </div>
       </div>
@@ -124,7 +146,7 @@
   </section>
 </main>
 <footer class="footer">
-  <span class="mono">© 2025 Min-Kyung Sung</span>
+  <span class="mono">© 2026 Min-Kyung Sung</span>
   <a href="https://github.com/clary97" target="_blank" class="mono footer-link">github.com/clary97 ↗</a>
 </footer>
 <script src="js/main.js"></script>
